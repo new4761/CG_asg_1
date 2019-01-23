@@ -29,11 +29,11 @@ class CG_as_1 extends JPanel {
             case 2:
             num_Color = (new Color(50,50,50));
               break;
-         default:num_Color = (new Color(100,100,100));
+        
           }
         
 
- return num_Color;
+ return num_Color ;
     }
     public void plot(Graphics g,Color c, int x, int y) {
         g.setColor(c);
