@@ -15,16 +15,17 @@ class CG_as_1 extends JPanel {
 
     public void paintComponent(Graphics g) {
    // 60050143 n =new 60050143();
-  //  60050165 j =new 60050165();
-    plot(g,test(1),20,30);
-    plot(g,test(2),50,50);
+   work_60050165 j =new work_60050165(g);
+
+    
+  //  plot(g,test(2),50,50);
     }
     
     public Color test(int num){
         Color num_Color;
         switch(num) {
             case 1:
-            num_Color = (new Color(0,0,0));
+            num_Color = (new Color(0,0,0)); //
               break;
             case 2:
             num_Color = (new Color(50,50,50));
@@ -71,4 +72,5 @@ class CG_as_1 extends JPanel {
         }
 
     }*/
+
 }

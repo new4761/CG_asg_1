@@ -1,0 +1,11 @@
+import java.awt.*;
+import javax.swing.*;
+class test extends CG_as_1
+{
+	test(Graphics g)
+	{		
+		 plot(g,test(2),50,50);
+	}
+	
+	
+}
