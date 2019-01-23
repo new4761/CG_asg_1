@@ -14,18 +14,34 @@ class CG_as_1 extends JPanel {
     }
 
     public void paintComponent(Graphics g) {
-      //  Bresenham(Color.RED, 100, 100, 400, 200, g);
-       // Bresenham(Color.BLUE, 400, 200, 100, 100, g);
-        Bresenham(Color.BLACK, 100, 100, 200, 400, g);
+   // 60050143 n =new 60050143();
+  //  60050165 j =new 60050165();
+    plot(g,color(1),20,30);
+    plot(g,color(2),20,30);
     }
+    
+    public Color color(int num){
+        Color num_Color;
+        switch(num) {
+            case 1:
+            num_Color = (new Color(0,0,0)));
+              break;
+            case 2:
+            num_Color = (new Color(50,50,50)));
+              break;
+        
+          }
+        
 
-    private void plot(Graphics g, int x, int y, Color c) {
+ return num_Color 
+    }
+    public void plot(Graphics g, int x, int y, Color c) {
         g.setColor(c);
         g.fillRect(x, y, 4, 4);
 
     }
 
-    private void Bresenham(Color c, int x1, int y1, int x2, int y2, Graphics g) {
+    public void Bresenham(Color c, int x1, int y1, int x2, int y2, Graphics g) {
         int dx = Math.abs(x2 - x1);
         int dy = Math.abs(y2 - y1);
         int Dk = 2 * dy - dx;
