@@ -25,11 +25,44 @@ class CG_as_1 extends JPanel {
         Color num_Color;
         switch(num) {
             case 1:
-            num_Color = (new Color(0,0,0)); //
+            num_Color = (new Color(114,177,178)); //color 1
               break;
             case 2:
-            num_Color = (new Color(50,50,50));
+            num_Color = (new Color(59,98,98));//color 2
               break;
+			case 3:
+			num_Color = (new Color(42,70,70));//color 3
+			  break;
+			case 4:
+			num_Color = (new Color(152,254,255));//color 4
+			  break;
+			case 5:
+			num_Color = (new Color(79,212,214));//color 5
+			  break;
+			case 6:
+			num_Color = (new Color(106,251,253));//color 6
+			  break;
+			case 7:
+			num_Color = (new Color(62,180,181));//color 7
+			  break;
+			case 8:
+			num_Color = (new Color(44,129,130));//color 8
+			  break;
+			case 9:
+			num_Color = (new Color(20,59,59));//color 9
+			  break;
+			case 10:
+			num_Color = (new Color(63,170,172));//color 10
+			  break;
+			case 11:
+		    num_Color = (new Color(43,128,129));//color 11
+			  break;
+			case 12:
+		    num_Color = (new Color(26,80,81));//color 12
+			  break;
+			case 13:
+		    num_Color = (new Color(13,39,39));//color 13
+			  break;
          default:num_Color = (new Color(100,100,100));
           }
         
