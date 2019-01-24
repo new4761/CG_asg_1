@@ -69,18 +69,61 @@ class CG_as_1 extends JPanel {
         return num_Color;
     }
 
+    // draw dot
     public void plot(Graphics g, Color c, int x, int y) {
         g.setColor(c);
         g.fillRect(x, y, 1, 1);
 
     }
-    public void plot(Graphics g, Color c, int x, int y,int sizeX,int sizeY) {
+
+    // draw dot with size
+    public void plot(Graphics g, Color c, int x, int y, int sizeX, int sizeY) {
         g.setColor(c);
         g.fillRect(x, y, sizeX, sizeY);
 
     }
 
-    public void Bresenham(Graphics g,Color c, int x1, int y1, int x2, int y2) {
+    public void fillcolorX(Graphics g, Color c, int x1, int y1, int x2, int y2 ,int yS) {
+        int d = 0;
+        int dx = Math.abs(x2 - x1);
+        int dy = Math.abs(y2 - y1);
+        int dx2 = 2 * dx;
+        int dy2 = 2 * dy;
+        int ix = x1 < x2 ? 1 : -1;
+        int iy = y1 < y2 ? 1 : -1;
+        int x = x1;
+        int y = y1;
+
+        if (dx >= dy) {
+            while (true) {
+                Bresenham(g, c, x, yS, x, y);
+                if (x == x2)
+                    break;
+                x += ix;
+                d += dy2;
+                if (d > dx) {
+                    y += iy;
+                    d -= dx2;
+                }
+            }
+        } else {
+            while (true) {
+                  Bresenham(g, c, x, yS, x, y);
+                if (y == y2)
+                    break;
+                y += iy;
+                d += dx2;
+                if (d > dy) {
+                    x += ix;
+                    d -= dy2;
+                }
+            }
+        }
+    
+    }
+
+    // draw line
+    public void Bresenham(Graphics g, Color c, int x1, int y1, int x2, int y2) {
         int d = 0;
 
         int dx = Math.abs(x2 - x1);
@@ -97,7 +140,7 @@ class CG_as_1 extends JPanel {
 
         if (dx >= dy) {
             while (true) {
-                plot(g,c,x, y);
+                plot(g, c, x, y);
                 if (x == x2)
                     break;
                 x += ix;
@@ -109,7 +152,7 @@ class CG_as_1 extends JPanel {
             }
         } else {
             while (true) {
-                plot(g,c,x, y);
+                plot(g, c, x, y);
                 if (y == y2)
                     break;
                 y += iy;
