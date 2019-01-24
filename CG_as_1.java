@@ -74,6 +74,11 @@ class CG_as_1 extends JPanel {
         g.fillRect(x, y, 1, 1);
 
     }
+    public void plot(Graphics g, Color c, int x, int y,int sizeX,int sizeY) {
+        g.setColor(c);
+        g.fillRect(x, y, sizeX, sizeY);
+
+    }
 
     public void Bresenham(Graphics g,Color c, int x1, int y1, int x2, int y2) {
         int d = 0;
