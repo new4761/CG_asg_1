@@ -82,8 +82,9 @@ class CG_as_1 extends JPanel {
         g.fillRect(x, y, sizeX, sizeY);
 
     }
-    //fillcolor only 1y
-    public void fillcolorX(Graphics g, Color c, int x1, int y1, int x2, int y2 ,int yS) {
+
+    // fillcolor only 1y
+    public void fillcolorX(Graphics g, Color c, int x1, int y1, int x2, int y2, int y3) {
         int d = 0;
         int dx = Math.abs(x2 - x1);
         int dy = Math.abs(y2 - y1);
@@ -96,7 +97,7 @@ class CG_as_1 extends JPanel {
 
         if (dx >= dy) {
             while (true) {
-                Bresenham(g, c, x, yS, x, y);
+                Bresenham(g, c, x, y3, x, y);
                 if (x == x2)
                     break;
                 x += ix;
@@ -108,7 +109,7 @@ class CG_as_1 extends JPanel {
             }
         } else {
             while (true) {
-                  Bresenham(g, c, x, yS, x, y);
+                Bresenham(g, c, x, y3, x, y);
                 if (y == y2)
                     break;
                 y += iy;
@@ -119,52 +120,64 @@ class CG_as_1 extends JPanel {
                 }
             }
         }
-    
+
     }
-    //fillcolor only 2y
-    public void fillcolorX(Graphics g, Color c, int x1, int y1, int x2, int y2 ,int yS,int yD) {
+
+    // fillcolor only 2y
+    public void fillcolorX(Graphics g, Color c, int x1, int y1, int x2, int y2, int yS, int yD) {
         int d = 0;
         int dx = Math.abs(x2 - x1);
         int dy = Math.abs(y2 - y1);
-        int dz = Math.abs(yD - yS);
+        int dz = Math.abs(yS - yD);
         int dx2 = 2 * dx;
         int dy2 = 2 * dy;
+        int dz2 = 2* dy;
         int ix = x1 < x2 ? 1 : -1;
         int iy = y1 < y2 ? 1 : -1;
         int iz = yS < yD ? 1 : -1;
         int x = x1;
         int y = y1;
-        int z =yS;
-
+        int z= yS;
         if (dx >= dy) {
             while (true) {
                 Bresenham(g, c, x, z, x, y);
-                if (x == x2)
+                
+                if (x == x2) {
                     break;
+                }
                 x += ix;
                 d += dy2;
                 if (d > dx) {
-                    z += iz;
+                    z  += iz;
                     y += iy;
                     d -= dx2;
                 }
+
             }
         } else {
             while (true) {
-                  Bresenham(g, c, x, z, x, y);
-                if (y == y2)
+                Bresenham(g, c, x,z, x, y);
+                
+
+                if (y == y2) {
                     break;
+                }
+                z +=iz;
                 y += iy;
                 d += dx2;
                 if (d > dy) {
-                    z += iz;
+                   
                     x += ix;
                     d -= dy2;
                 }
+
             }
         }
-    
+
     }
+
+   
+    
 
     // draw line
     public void Bresenham(Graphics g, Color c, int x1, int y1, int x2, int y2) {
@@ -207,5 +220,6 @@ class CG_as_1 extends JPanel {
                 }
             }
         }
+
     }
 }

@@ -16,10 +16,18 @@ class work_60050143 extends CG_as_1
 	 	fillcolorX(g, set_CG(7), 54, 331, 29, 389);
 	 	fillcolorX(g, set_CG(7), 14, 435, 29, 389);
 	*/
-		draw_ice_color10(g);
+			draw_ice_color10(g);
 		draw_ice_color6(g);
+		draw_ice_color4(g);
 
 	}
+	private void draw_ice_color4(Graphics g){
+		//draw and fillcolor ice_color 4
+		int color =4;
+		//top ice_color 4
+		//	fillcolorX(g, set_CG(color), 0, 80, 27, 30,30,10);
+		//	fillcolorX(g, set_CG(color), 27, 30, 48, 20,20 ,10);	
+		}
 	private void draw_ice_color6(Graphics g){
 		//draw and fillcolor ice_color 6
 		int color =6;
@@ -122,13 +130,13 @@ class work_60050143 extends CG_as_1
 			
 				fillcolorX(g, set_CG(color), 73,493, 83,432,600);
 				fillcolorX(g, set_CG(color), 73,501, 45, 542,600);
-			
+			 
 	
 				fillcolorX(g, set_CG(color), 102+4,392+4, 82, 474+4,600);
 				fillcolorX(g, set_CG(color), 102,392+6, 112+2,310+6,600);
 				fillcolorX(g, set_CG(color), 102+8,392+8, 120+20, 376+8,600);
-				fillcolorX(g, set_CG(color), 125,360+8, 140+14, 345+8,400+8,350);
-				fillcolorX(g, set_CG(color), 140,345+10, 155, 330+10,357+10,310+10);
+				fillcolorX(g, set_CG(color), 125,360+8, 142, 345+8,410,352);
+				fillcolorX(g, set_CG(color), 140,345+10, 155, 330+10,357+10,310);
 				
 				fillcolorX(g, set_CG(color), 120+8,450+8, 142+30,487+8,600);
 				fillcolorX(g, set_CG(color), 156+20,496+8, 142+8,487+8,600);
