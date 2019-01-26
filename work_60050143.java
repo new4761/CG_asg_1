@@ -1,33 +1,179 @@
 import java.awt.*;
 import javax.swing.*;
+
+
 class work_60050143 extends CG_as_1
 {
 	work_60050143(Graphics g)
 	{		
-	/* //draw ice_color 7
-	 	fillcolorX(g, set_CG(7), 0, 277, 6, 258);
-	 	fillcolorX(g, set_CG(7), 6, 258, 17, 251);
-	 	fillcolorX(g, set_CG(7), 31, 214, 17, 251);
-	 	fillcolorX(g, set_CG(7), 33, 218, 17, 251);
-	 	fillcolorX(g, set_CG(7), 33, 218, 37, 204);
-	 	fillcolorX(g, set_CG(7), 37, 204, 44, 188);
-	 	fillcolorX(g, set_CG(7), 57, 240, 44, 188);
-	 	fillcolorX(g, set_CG(7), 57, 240, 54, 331);
-	 	fillcolorX(g, set_CG(7), 54, 331, 29, 389);
-	 	fillcolorX(g, set_CG(7), 14, 435, 29, 389);
-	*/
-			draw_ice_color10(g);
-		draw_ice_color6(g);
-		draw_ice_color4(g);
+//layer ice_set2
+		draw_ice_color7(g);
 
+//layer ice_set1
+		draw_ice_color10(g);
+		draw_ice_color6(g);
+//layer text
+		draw_60050143(g);
+		draw_60050165(g);
 	}
-	private void draw_ice_color4(Graphics g){
-		//draw and fillcolor ice_color 4
-		int color =4;
-		//top ice_color 4
-		//	fillcolorX(g, set_CG(color), 0, 80, 27, 30,30,10);
-		//	fillcolorX(g, set_CG(color), 27, 30, 48, 20,20 ,10);	
-		}
+//layer ice_set2
+	private void draw_60050143(Graphics g){
+		int color=14;
+		int size =5;
+		int margin=50; 
+		//min:265 max:340
+//60050143
+		//6
+	Bresenham(g, set_CG(color), 200, 340, 200, 280,size);
+	Bresenham(g, set_CG(color), 200, 300, 240, 300,size);
+	Bresenham(g, set_CG(color), 200, 340, 240, 340,size);
+	Bresenham(g, set_CG(color), 200, 280, 215, 265,size);
+	Bresenham(g, set_CG(color), 240, 265, 215, 265,size);
+	Bresenham(g, set_CG(color), 240, 340, 240, 300,size);
+		//0
+		Bresenham(g, set_CG(color), 260, 265, 285, 265,size);
+		Bresenham(g, set_CG(color), 259, 266,257,337,size);
+		Bresenham(g, set_CG(color), 286, 266,289,337,size);
+		Bresenham(g, set_CG(color), 260, 340, 285, 340,size);
+		//0
+		Bresenham(g, set_CG(color), 260+margin, 265, 285+margin, 265,size);
+		Bresenham(g, set_CG(color), 259+margin, 266,257+margin,337,size);
+		Bresenham(g, set_CG(color), 286+margin, 266,289+margin,337,size);
+		Bresenham(g, set_CG(color), 260+margin, 340, 285+margin, 340,size); 
+		//5
+		Bresenham(g,  set_CG(color) ,355,265 ,390,265,size );
+		Bresenham(g,  set_CG(color) ,355,265 ,355,310,size );
+		Bresenham(g,  set_CG(color) ,355,310 ,390,310,size );
+		Bresenham(g,  set_CG(color) ,390,340 ,390,310,size );
+		Bresenham(g,  set_CG(color) ,355,340 ,390,340,size );
+		//0
+		Bresenham(g, set_CG(color), 355+margin, 265, 375+margin, 265,size);
+		Bresenham(g, set_CG(color), 354+margin, 266,353+margin,337,size);
+		Bresenham(g, set_CG(color), 378+margin, 266,379+margin,337,size);
+		Bresenham(g, set_CG(color), 355+margin, 340, 375+margin, 340,size);
+			//1
+			Bresenham(g, set_CG(color), 401+margin, 265, 401+margin, 340,size);
+			//4
+			Bresenham(g, set_CG(color), 420+margin, 265, 420+margin, 310,size);	
+			Bresenham(g, set_CG(color), 420+margin, 310, 440+margin, 310,size);			
+			Bresenham(g, set_CG(color), 440+margin, 265, 440+margin, 340,size);	
+			Bresenham(g, set_CG(color), 420+margin, 265, 420+margin, 310,size);	
+			Bresenham(g, set_CG(color), 420+margin, 310, 440+margin, 310,size);			
+			Bresenham(g, set_CG(color), 440+margin, 265, 440+margin, 340,size);	
+			//3 
+				Bresenham(g, set_CG(color), 455+margin, 265, 480+margin, 265,size);	
+				Bresenham(g, set_CG(color), 455+margin, 310, 480+margin, 310,size);			
+				Bresenham(g, set_CG(color), 455+margin, 340, 480+margin, 340,size);	
+				Bresenham(g, set_CG(color), 480+margin, 265, 480+margin, 340,size);	
+	
+			}
+			private void draw_60050165(Graphics g){
+				int color=14;
+				int size =5;
+				int margin=50;
+				int margin_top=100; 
+		//60050165
+				//6
+			Bresenham(g, set_CG(color), 200, 340+margin_top, 200, 280+margin_top,size);
+			Bresenham(g, set_CG(color), 200, 300+margin_top, 240, 300+margin_top,size);
+			Bresenham(g, set_CG(color), 200, 340+margin_top, 240, 340+margin_top,size);
+			Bresenham(g, set_CG(color), 200, 280+margin_top, 215, 265+margin_top,size);
+			Bresenham(g, set_CG(color), 240, 265+margin_top, 215, 265+margin_top,size);
+			Bresenham(g, set_CG(color), 240, 340+margin_top, 240, 300+margin_top,size);
+				//0
+				Bresenham(g, set_CG(color), 260, 265+margin_top, 285, 265+margin_top,size);
+				Bresenham(g, set_CG(color), 259, 266+margin_top,257,337+margin_top,size);
+				Bresenham(g, set_CG(color), 286, 266+margin_top,289,337+margin_top,size);
+				Bresenham(g, set_CG(color), 260, 340+margin_top, 285, 340+margin_top,size);
+				//0
+				Bresenham(g, set_CG(color), 260+margin, 265+margin_top, 285+margin, 265+margin_top,size);
+				Bresenham(g, set_CG(color), 259+margin, 266+margin_top,257+margin,337+margin_top,size);
+				Bresenham(g, set_CG(color), 286+margin, 266+margin_top,289+margin,337+margin_top,size);
+				Bresenham(g, set_CG(color), 260+margin, 340+margin_top, 285+margin, 340+margin_top,size); 
+				//5
+				Bresenham(g,  set_CG(color) ,355,265+margin_top ,390,265+margin_top,size );
+				Bresenham(g,  set_CG(color) ,355,265+margin_top ,355,310+margin_top,size );
+				Bresenham(g,  set_CG(color) ,355,310+margin_top ,390,310+margin_top,size );
+				Bresenham(g,  set_CG(color) ,390,340+margin_top ,390,310+margin_top,size );
+				Bresenham(g,  set_CG(color) ,355,340+margin_top,390,340+margin_top,size );
+				//0
+				Bresenham(g, set_CG(color), 355+margin, 265+margin_top, 375+margin, 265+margin_top,size);
+				Bresenham(g, set_CG(color), 354+margin, 266+margin_top,353+margin,337+margin_top,size);
+				Bresenham(g, set_CG(color), 378+margin, 266+margin_top,379+margin,337+margin_top,size);
+				Bresenham(g, set_CG(color), 355+margin, 340+margin_top, 375+margin, 340+margin_top,size);
+					//1
+					Bresenham(g, set_CG(color), 401+margin, 265+margin_top, 401+margin, 340+margin_top,size);
+					
+					//6
+					Bresenham(g, set_CG(color), 420+margin, 340+margin_top, 420+margin, 280+margin_top,size);
+			Bresenham(g, set_CG(color), 420+margin, 300+margin_top, 450+margin, 300+margin_top,size);
+			Bresenham(g, set_CG(color), 420+margin, 340+margin_top, 450+margin, 340+margin_top,size);
+			Bresenham(g, set_CG(color), 420+margin, 280+margin_top, 435+margin, 265+margin_top,size);
+			Bresenham(g, set_CG(color), 450+margin, 265+margin_top, 435+margin, 265+margin_top,size);
+			Bresenham(g, set_CG(color), 450+margin, 340+margin_top, 450+margin, 300+margin_top,size);
+				
+					//5
+						Bresenham(g, set_CG(color), 455+margin+10, 265+margin_top, 480+margin+10, 265+margin_top,size);	
+						Bresenham(g, set_CG(color), 455+margin+10, 310+margin_top, 480+margin+10, 310+margin_top,size);			
+						Bresenham(g, set_CG(color), 455+margin+10, 340+margin_top, 480+margin+10, 340+margin_top,size);	
+						Bresenham(g, set_CG(color), 455+margin+10, 265+margin_top, 455+margin+10, 310+margin_top,size);
+						Bresenham(g, set_CG(color), 480+margin+10, 340+margin_top, 480+margin+10, 310+margin_top,size);	
+					
+			
+					}
+	private void draw_ice_color7(Graphics g){
+		int color =7;
+		//top
+		fillcolorX(g, set_CG(color), 0, 277, 6, 258,0);
+		fillcolorX(g, set_CG(color), 6, 258, 17, 251,0);
+		fillcolorX(g, set_CG(color), 25, 40, 35, 350,0);
+		fillcolorX(g, set_CG(color), 31, 214, 17, 251,0);
+		fillcolorX(g, set_CG(color), 33, 218, 17, 251,0);
+		fillcolorX(g, set_CG(color), 33, 218, 37, 204,0);
+		fillcolorX(g, set_CG(color), 37, 204, 44, 188,0);
+		fillcolorX(g, set_CG(color), 57, 240, 44, 188,0);
+		fillcolorX(g, set_CG(color), 57, 240, 54, 331,0);
+		fillcolorX(g, set_CG(color), 55, 350, 78, 320,0);
+		fillcolorX(g, set_CG(color), 102, 378, 78, 320,0);
+		fillcolorX(g, set_CG(color), 102, 345, 125, 320,0);
+		fillcolorX(g, set_CG(color), 130, 300, 125, 289,0);
+		fillcolorX(g, set_CG(color), 130, 300, 156, 200,0);
+		fillcolorX(g, set_CG(color), 250, 160, 156, 200,0);
+		fillcolorX(g, set_CG(color), 250, 145, 289, 137,0);
+		fillcolorX(g, set_CG(color), 310, 110, 289, 137,0);
+		fillcolorX(g, set_CG(color), 310, 110, 360, 145,0);
+		fillcolorX(g, set_CG(color), 380, 270, 360, 145,0);
+		fillcolorX(g, set_CG(color), 366, 180, 450, 102,0);
+		fillcolorX(g, set_CG(color), 490, 170, 430, 102,0);
+		fillcolorX(g, set_CG(color), 490, 170, 513, 432,0);
+		fillcolorX(g, set_CG(color), 490, 170, 540, 500,0);
+		fillcolorX(g, set_CG(color), 589, 140, 540, 478,0);
+		fillcolorX(g, set_CG(color), 578, 200, 600, 243,0);
+		
+		
+		//bottom
+		fillcolorX(g, set_CG(color), 42, 435, 32, 562,600);
+		fillcolorX(g, set_CG(color), 41, 452, 54, 331,600);
+		fillcolorX(g, set_CG(color), 55, 320, 115, 320,600);
+		fillcolorX(g, set_CG(color), 20, 40, 15, 200,600);
+		
+		fillcolorX(g, set_CG(color), 220, 600, 310, 530,600);
+		fillcolorX(g, set_CG(color), 367, 478, 310, 567,600);
+		fillcolorX(g, set_CG(color), 367, 500, 390, 530,600);
+		fillcolorX(g, set_CG(color), 430, 589, 390, 540,600);
+		fillcolorX(g, set_CG(color), 530, 328, 570, 378,600);
+		fillcolorX(g, set_CG(color), 589, 456, 570, 368,600);
+		
+
+		fillcolorX(g, set_CG(color), 580, 570, 600, 300,600);
+
+		
+		
+	}
+	
+	
+	//layer ice_set1
+
 	private void draw_ice_color6(Graphics g){
 		//draw and fillcolor ice_color 6
 		int color =6;
