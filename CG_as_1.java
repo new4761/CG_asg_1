@@ -63,7 +63,7 @@ class CG_as_1 extends JPanel {
             num_Color = (new Color(13, 39, 39));// color 13
             break;
         default:
-            num_Color = (new Color(100, 100, 100));
+            num_Color = (new Color(255,255, 255)); //white color
         }
 
         return num_Color;
@@ -210,6 +210,49 @@ class CG_as_1 extends JPanel {
         } else {
             while (true) {
                 plot(g, c, x, y);
+                if (y == y2)
+                    break;
+                y += iy;
+                d += dx2;
+                if (d > dy) {
+                    x += ix;
+                    d -= dy2;
+                }
+            }
+        }
+
+    }
+    // draw line with size
+    public void Bresenham(Graphics g, Color c, int x1, int y1, int x2, int y2 ,int size) {
+        int d = 0;
+
+        int dx = Math.abs(x2 - x1);
+        int dy = Math.abs(y2 - y1);
+
+        int dx2 = 2 * dx;
+        int dy2 = 2 * dy;
+
+        int ix = x1 < x2 ? 1 : -1;
+        int iy = y1 < y2 ? 1 : -1;
+
+        int x = x1;
+        int y = y1;
+
+        if (dx >= dy) {
+            while (true) {
+                plot(g, c, x, y,size,size);
+                if (x == x2)
+                    break;
+                x += ix;
+                d += dy2;
+                if (d > dx) {
+                    y += iy;
+                    d -= dx2;
+                }
+            }
+        } else {
+            while (true) {
+                plot(g, c, x, y,size,size);
                 if (y == y2)
                     break;
                 y += iy;
