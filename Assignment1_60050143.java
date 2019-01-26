@@ -2,9 +2,9 @@ import java.awt.*;
 import javax.swing.*;
 
 
-class Assignment1__60050143 extends CG_as_1
+class Assignment1_60050143 extends CG_as_1
 {
-	Assignment1__60050143(Graphics g)
+	Assignment1_60050143(Graphics g)
 	{		
 //layer ice_set2
 		draw_ice_color7(g);

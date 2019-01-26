@@ -15,8 +15,8 @@ class CG_as_1 extends JPanel {
 
     public void paintComponent(Graphics g) {
 
-        Assignment1__60050165 j = new Assignment1__60050165(g); // Draw Work From 600165
-        Assignment1__60050143 n = new Assignment1__60050143(g); // Draw Work From 600163
+        Assignment1_60050165 j = new Assignment1_60050165(g); // Draw Work From 600165
+        Assignment1_60050143 n = new Assignment1_60050143(g); // Draw Work From 600163
 
     }
 

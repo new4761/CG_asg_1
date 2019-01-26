@@ -1,7 +1,7 @@
 import java.awt.*;
 import javax.swing.*;
-class Assignment1__60050165 extends CG_as_1{
-	Assignment1__60050165(Graphics g){		
+class Assignment1_60050165 extends CG_as_1{
+	Assignment1_60050165(Graphics g){		
 		plot(g,set_CG(9),0,0,600,600);//frist background
 	    background_layer1_color1(g);
 		background_layer2_color2(g);
